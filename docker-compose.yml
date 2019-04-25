@@ -1,0 +1,7 @@
+version: "3"
+services:
+  notebook:
+    container_name: hello
+    image: nginxdemos/hello
+    ports:
+      - "80:80"
