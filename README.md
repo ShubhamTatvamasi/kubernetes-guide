@@ -51,6 +51,11 @@ Get the detailed description of service
 kubectl describe service hello
 ```
 
+Update node role to master
+```
+kubectl label node docker-for-desktop node-role.kubernetes.io/master=master
+```
+
 ---
 Docker Compose
 ```
