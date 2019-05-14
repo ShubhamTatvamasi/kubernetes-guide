@@ -9,7 +9,7 @@ gcloud container clusters list
 
 Get the cluster info from different project
 ```
-gcloud container clusters get-credentials kubeflow-05-4
+gcloud container clusters get-credentials kubernetes-course
 ```
 
 Create a new cluster on GCP
