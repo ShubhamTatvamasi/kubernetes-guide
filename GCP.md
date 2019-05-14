@@ -35,13 +35,6 @@ gcloud container clusters delete kubernetes-course \
 --zone us-central1-a
 ```
 
-Update GKE container
-```
-gcloud container clusters upgrade kubernetes-course \
---machine-type n1-standard-2 \
---disk-size 20
-```
-
 Resizing a cluster
 ```
 gcloud container clusters resize kubernetes-course \
