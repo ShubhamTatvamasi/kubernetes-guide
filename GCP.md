@@ -7,6 +7,11 @@ Get list of clusters on GCP
 gcloud container clusters list
 ```
 
+Get the cluster info from different project
+```
+gcloud container clusters get-credentials kubeflow-05-4
+```
+
 Create a new cluster on GCP
 ```
 gcloud container clusters create kubernetes-course \
@@ -29,7 +34,6 @@ Delete cluster on GCP
 gcloud container clusters delete kubernetes-course \
 --zone us-central1-a
 ```
-
 
 Update GKE container
 ```
