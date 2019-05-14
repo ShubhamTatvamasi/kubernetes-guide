@@ -38,6 +38,7 @@ gcloud container clusters delete kubernetes-course \
 Resizing a cluster
 ```
 gcloud container clusters resize kubernetes-course \
+--zone us-central1-a \
 --node-pool default-pool \
 --num-nodes 1
 ```
