@@ -42,3 +42,8 @@ gcloud container clusters resize kubernetes-course \
 --node-pool default-pool \
 --num-nodes 1
 ```
+
+To set the zone property in the compute section, run:
+```
+gcloud config set compute/zone us-central1-a
+```
