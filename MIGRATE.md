@@ -34,3 +34,5 @@ Delete old node pool:
 ```
 gcloud container node-pools delete default-pool --cluster kubernetes-course --zone us-central1-a
 ```
+
+[Machine Types](https://cloud.google.com/compute/docs/machine-types)
