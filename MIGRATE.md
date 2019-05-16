@@ -18,9 +18,6 @@ kubectl get pods -o=wide
 
 Cordon the existing node pool:
 ```
-kubectl get nodes -l cloud.google.com/gke-nodepool=default-pool
-```
-```
 for node in $(kubectl get nodes -l cloud.google.com/gke-nodepool=default-pool -o=name); do
   kubectl cordon "$node";
 done
