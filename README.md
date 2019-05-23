@@ -55,6 +55,14 @@ Update node role to master
 ```
 kubectl label node docker-for-desktop node-role.kubernetes.io/master=master
 ```
+---
+
+Port forward on remote pod to local
+```
+kubectl port-forward $POD_NAME 8080:80
+kubectl port-forward hello-deployment-7b75d99cb9-q7h5p 8080:80
+```
+
 
 ---
 Docker Compose
