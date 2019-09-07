@@ -1,5 +1,14 @@
 # kubernetes-course
 
+Get list of all the things running on cluster
+```
+kubectl get all
+```
+
+Use the following flag for running process in background
+```
+--wait=false
+```
 
 Check if the cluster is running
 ```
