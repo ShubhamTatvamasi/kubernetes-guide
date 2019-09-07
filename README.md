@@ -9,6 +9,7 @@ Use the following flag for running process in background
 ```
 --wait=false
 ```
+---
 
 Check if the cluster is running
 ```
