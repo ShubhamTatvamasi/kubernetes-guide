@@ -73,6 +73,10 @@ kubectl port-forward $POD_NAME 8080:80
 kubectl port-forward hello-deployment-7b75d99cb9-q7h5p 8080:80
 ```
 
+Rollout 1 previous version
+```
+kubectl rollout undo deploy webapp
+```
 
 ---
 Docker Compose
