@@ -5,14 +5,22 @@ Get list of all the things running on cluster
 kubectl get all
 ```
 
+Use the following flag for running process in background
+```
+--wait=false
+```
+---
+
+### namespaces
+
 Get everything from all namespaces
 ```
 kubectl get all --all-namespaces
 ```
 
-Use the following flag for running process in background
+list all namespaces
 ```
---wait=false
+kubectl get namespace
 ```
 ---
 
