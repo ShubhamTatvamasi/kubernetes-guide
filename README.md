@@ -64,6 +64,12 @@ For getting inside pod
 kubectl exec -it hello-75b944d997-6pqd4 -- sh
 ```
 
+Get inside a specfic container of a pod
+```
+kubectl exec -it kube-dns-b46cc9485-dvgrc -n kube-system -c kubedns -- sh
+```
+> use container name
+
 For getting list of all services
 ```
 kubectl get service
