@@ -11,6 +11,11 @@ Use the following flag for running process in background
 ```
 ---
 
+Cluster Info
+```
+kubectl cluster-info
+```
+
 ### namespaces
 
 Get everything from all namespaces
