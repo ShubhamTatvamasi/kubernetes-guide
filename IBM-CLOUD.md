@@ -15,4 +15,3 @@ Get the list of workers for a cluster
 ```bash
 ibmcloud ks worker ls microservices
 ```
-> `microservices` is the name of a cluster
