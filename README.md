@@ -5,6 +5,11 @@ Get list of all the things running on cluster
 kubectl get all
 ```
 
+set namespace for current context
+```bash
+kubectl config set-context --current --namespace default
+```
+
 Use the following flag for running process in background
 ```
 --wait=false
