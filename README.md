@@ -5,6 +5,12 @@ Get list of all the things running on cluster
 kubectl get all
 ```
 
+delete everything from a namespace
+```
+kubectl delete all --all
+```
+> `-n default`
+
 set namespace for current context
 ```bash
 kubectl config set-context --current --namespace default
