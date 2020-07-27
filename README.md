@@ -11,6 +11,11 @@ kubectl delete all --all
 ```
 > `-n default`
 
+delete crashed pods
+```bash
+kubectl delete pods --field-selector 'status.phase=Failed'
+```
+
 set namespace for current context
 ```bash
 kubectl config set-context --current --namespace default
