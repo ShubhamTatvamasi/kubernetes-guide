@@ -21,6 +21,14 @@ set namespace for current context
 kubectl config set-context --current --namespace default
 ```
 
+delete namespace which is stuck at `Terminating` state:
+```bash
+NAMESPACE=kubevirt
+kubectl get namespace $NAMESPACE -o json > $NAMESPACE.json
+sed -i -e 's/"kubernetes"//' $NAMESPACE.json
+kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f ./$NAMESPACE.json
+```
+
 Use the following flag for running process in background
 ```
 --wait=false
