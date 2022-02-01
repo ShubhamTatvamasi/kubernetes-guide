@@ -11,9 +11,12 @@ kubectl run busybox --dry-run -o yaml --image=busybox -- sleep infinity
 kubectl run busybox --image=busybox -- sleep infinity
 ```
 
-
 Install ansible on pod:
 ```bash
 kubectl run ubuntu --image=ubuntu -- bash -c 'apt update; apt install ansible -y; ansible-galaxy collection install shubhamtatvamasi.magma'
+
+kubectl create deployment ubuntu --image=ubuntu -- bash -c 'apt update; apt install ansible -y; ansible-galaxy collection install shubhamtatvamasi.magma'
+
+kubectl scale deploy ubuntu --replicas=50
 ```
 
