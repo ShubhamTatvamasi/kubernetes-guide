@@ -20,3 +20,10 @@ kubectl create deployment ubuntu --image=ubuntu -- bash -c 'apt update; apt inst
 kubectl scale deploy ubuntu --replicas=50
 ```
 
+ansible test
+```bash
+kubectl create deployment ansible-test --image=shubhamtatvamasi/ansible:test
+kubectl scale deploy ansible-test --replicas=50
+```
+
+
